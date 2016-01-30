@@ -1,0 +1,65 @@
+.controller{
+  width: 400px;
+  height: 200px;
+  position: relative;
+  background-color: gray;
+}
+.controller__right-buttons{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 66px;
+  height: 66px;
+}
+
+.controller__right-buttons #btn-a{
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+.controller__right-buttons #btn-b{
+  position: absolute;
+  left: 21px;
+  bottom: 0;
+}
+.controller__right-buttons #btn-x{
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
+.controller__right-buttons #btn-y{
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+
+.controller__button{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 4px;
+  background-color: white;
+  color: black;
+  border: 1px solid blue;
+  display: inline-block;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+.controller__right-buttons .controller__button{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  border: none;
+  font-weight: bold;
+
+}
+.controller__right-buttons .controller__button--pressed{
+  background-color: blue;
+}
+
+.controller__button--pressed{
+  background-color: black;
+  color: white;
+}
+
