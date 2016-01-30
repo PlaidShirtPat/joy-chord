@@ -23,14 +23,20 @@ $(document).ready(function(){
   }
 
   var axisMappings = {
-    0: '',
-    1: '',
-    2: '',
-    3: '',
-    4: '',
-    5: '',
-    6: '',
-    7: '',
+    0: null,
+    1: null,
+    2: null,
+    3: null,
+    4: null,
+    5: null,
+    6: {
+      1: "dright",
+      "-1": "dleft"
+    },
+    7: {
+      1: "ddown",
+      "-1": "dup"
+    }
   }
 
   var buttonPressed = function (b) {
@@ -45,10 +51,21 @@ $(document).ready(function(){
       if(buttonMappings[i]){
         if(buttonPressed(gp.buttons[i]))
           $('#btn-'+buttonMappings[i]).addClass(activeButtonClass);
-        else
-          $('#btn-'+buttonMappings[i]).removeClass(activeButtonClass);
       }
     }
+  }
+
+  var drawAxisStates = function(gp){
+    for(i=0; i<gp.axes.length; i++){
+      var axisValue = Math.ceil(gp.axes[i]);
+      if(axisMappings[i] && axisMappings[i][axisValue]){
+        $('#btn-'+axisMappings[i][axisValue]).addClass(activeButtonClass);
+      }
+    }
+  }
+  
+  var resetButtonStates = function(gp){
+    $('.controller__button').removeClass(activeButtonClass);
   }
 
   var gameLoop = function(){
@@ -56,7 +73,9 @@ $(document).ready(function(){
     gp = navigator.getGamepads()[0]
     if(!gp) return;
 
+    resetButtonStates(gp);
     drawButtonStates(gp);
+    drawAxisStates(gp);
   }
 
   setInterval(gameLoop, 10);
