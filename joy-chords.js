@@ -74,6 +74,7 @@ $(document).ready(function(){
   }
 
   var chordMap = {};
+  //Minor Alpha
   chordMap[btnCombo('x')] =           'n';
   chordMap[btnCombo('a')] =           's';
   chordMap[btnCombo('b')] =           'h';
@@ -100,7 +101,7 @@ $(document).ready(function(){
   chordMap[btnCombo('dright', 'y')] = 'w';
   chordMap[btnCombo('x', 'a')] =      'v';
   chordMap[btnCombo('y', 'b')] =      'z';
-  //Capitals
+  //Major Alpha
   chordMap[btnCombo('r1', 'x')] =           'N';
   chordMap[btnCombo('r1', 'a')] =           'S';
   chordMap[btnCombo('r1', 'b')] =           'H';
@@ -127,6 +128,67 @@ $(document).ready(function(){
   chordMap[btnCombo('r1', 'dright', 'y')] = 'W';
   chordMap[btnCombo('r1', 'x', 'a')] =      'V';
   chordMap[btnCombo('r1', 'y', 'b')] =      'Z';
+  //Numeric
+  chordMap[btnCombo('r2', 'x')] =           '0';
+  chordMap[btnCombo('r2', 'a')] =           '1';
+  chordMap[btnCombo('r2', 'b')] =           '2';
+  chordMap[btnCombo('r2', 'y')] =           '3';
+  chordMap[btnCombo('r2', 'dup')] =         '4';
+  chordMap[btnCombo('r2', 'dright')] =      '5';
+  chordMap[btnCombo('r2', 'ddown')] =       '6';
+  chordMap[btnCombo('r2', 'dleft')] =       '7';
+  chordMap[btnCombo('r2', 'x', 'a')] =      '8';
+  chordMap[btnCombo('r2', 'y', 'b')] =      '9';
+  //Symbols
+  chordMap[btnCombo('r2', 'dleft', 'x')] =  '!';
+  chordMap[btnCombo('r2', 'dleft', 'a')] =  '@';
+  chordMap[btnCombo('r2', 'dleft', 'b')] =  '#';
+  chordMap[btnCombo('r2', 'dleft', 'y')] =  '$';
+  chordMap[btnCombo('r2', 'dup', 'x')] =    '%';
+  chordMap[btnCombo('r2', 'dup', 'a')] =    '^';
+  chordMap[btnCombo('r2', 'dup', 'b')] =    '&';
+  chordMap[btnCombo('r2', 'dup', 'y')] =    '*';
+  chordMap[btnCombo('r2', 'x', 'a')] =      '(';
+  chordMap[btnCombo('r2', 'y', 'b')] =      ')';
+  chordMap[btnCombo('r2', 'ddown', 'x')] =  '-';
+  chordMap[btnCombo('r2', 'ddown', 'a')] =  '_';
+  chordMap[btnCombo('r2', 'ddown', 'b')] =  '=';
+  chordMap[btnCombo('r2', 'ddown', 'y')] =  '+';
+  chordMap[btnCombo('r2', 'dright', 'x')] = '[';
+  chordMap[btnCombo('r2', 'dright', 'a')] = ']';
+  chordMap[btnCombo('r2', 'dright', 'b')] = '{';
+  chordMap[btnCombo('r2', 'dright', 'y')] = '}';
+  //More Symbols
+  chordMap[btnCombo('l1', 'x')] =           '\';
+  chordMap[btnCombo('l1', 'a')] =           '|';
+  chordMap[btnCombo('l1', 'b')] =           ';';
+  chordMap[btnCombo('l1', 'y')] =           ':';
+  chordMap[btnCombo('l1', 'dup')] =         '\'';
+  chordMap[btnCombo('l1', 'dright')] =      '"';
+  chordMap[btnCombo('l1', 'ddown')] =       ',';
+  chordMap[btnCombo('l1', 'dleft')] =       '.';
+  chordMap[btnCombo('l1', 'x', 'a')] =      '<';
+  chordMap[btnCombo('l1', 'y', 'b')] =      '>';
+  chordMap[btnCombo('l1', 'dleft', 'x')] =  '/';
+  chordMap[btnCombo('l1', 'dleft', 'a')] =  '?';
+  chordMap[btnCombo('l1', 'dleft', 'b')] =  '`';
+  chordMap[btnCombo('l1', 'dleft', 'y')] =  '~';
+  //unmapped
+  chordMap[btnCombo('l1', 'dup', 'x')] =    '';
+  chordMap[btnCombo('l1', 'dup', 'a')] =    '';
+  chordMap[btnCombo('l1', 'dup', 'b')] =    '';
+  chordMap[btnCombo('l1', 'dup', 'y')] =    '';
+  chordMap[btnCombo('l1', 'x', 'a')] =      '';
+  chordMap[btnCombo('l1', 'y', 'b')] =      '';
+  chordMap[btnCombo('l1', 'ddown', 'x')] =  '';
+  chordMap[btnCombo('l1', 'ddown', 'a')] =  '';
+  chordMap[btnCombo('l1', 'ddown', 'b')] =  '';
+  chordMap[btnCombo('l1', 'ddown', 'y')] =  '';
+  chordMap[btnCombo('l1', 'dright', 'x')] = '';
+  chordMap[btnCombo('l1', 'dright', 'a')] = '';
+  chordMap[btnCombo('l1', 'dright', 'b')] = '';
+  chordMap[btnCombo('l1', 'dright', 'y')] = '';
+
 
   var activeButtons = {
     'x':        false, 
