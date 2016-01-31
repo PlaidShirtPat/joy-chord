@@ -5,6 +5,9 @@
   width: 400px;
   height: 600px;
   overflow: auto;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .controller{
