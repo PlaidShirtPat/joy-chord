@@ -191,10 +191,10 @@ $(document).ready(function(){
   chordMap[btnCombo('l2', 'a')] =           ' ';
   chordMap[btnCombo('l2', 'b')] =           '\b';
   chordMap[btnCombo('l2', 'y')] =           'del'; //delete, but implement later
-  chordMap[btnCombo('l2', 'dup')] =         '';
-  chordMap[btnCombo('l2', 'dright')] =      '';
-  chordMap[btnCombo('l2', 'ddown')] =       '';
-  chordMap[btnCombo('l2', 'dleft')] =       '';
+  chordMap[btnCombo('l2', 'dup')] =         'pageup';
+  chordMap[btnCombo('l2', 'dright')] =      'pagedown';
+  chordMap[btnCombo('l2', 'ddown')] =       'home';
+  chordMap[btnCombo('l2', 'dleft')] =       'end';
   chordMap[btnCombo('l2', 'x', 'a')] =      '';
   chordMap[btnCombo('l2', 'y', 'b')] =      '';
   chordMap[btnCombo('l2', 'dleft', 'x')] =  '';
@@ -213,8 +213,6 @@ $(document).ready(function(){
   chordMap[btnCombo('l2', 'dright', 'a')] = '';
   chordMap[btnCombo('l2', 'dright', 'b')] = '';
   chordMap[btnCombo('l2', 'dright', 'y')] = '';
-
-
 
   var activeButtons = {
     'x':        false, 

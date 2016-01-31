@@ -105,3 +105,15 @@ _ : 'r2', 'ddown', 'a'
 $ : 'r2', 'dleft', 'y'
 & : 'r2', 'dup', 'b'
 % : 'r2', 'dup', 'x'
+
+
+//other?
+
+\n : 'l2', 'x'
+space : 'l2', 'a'
+\b : 'l2', 'b'
+del : 'l2', 'y'
+pageup : 'l2', 'dup'
+pagedown : 'l2', 'dright'
+home : 'l2', 'ddown'
+end : 'l2', 'dleft'
