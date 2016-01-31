@@ -23,9 +23,8 @@
 }
 
 .controller{
-
   width: 400px;
-  height: 200px;
+  height: 150px;
   position: relative;
   background-color: lightgray;
 }
