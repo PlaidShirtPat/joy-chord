@@ -278,7 +278,9 @@ $(document).ready(function(){
         buttons.push(button);
     }
 
-    writeText(chordMap[btnCombo(buttons)]);
+    var text = chordMap[btnCombo(buttons)];
+    if(text)
+      writeText(text);
   }
 
   var text = "";
