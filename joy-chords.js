@@ -186,6 +186,34 @@ $(document).ready(function(){
   chordMap[btnCombo('l1', 'dright', 'a')] = '';
   chordMap[btnCombo('l1', 'dright', 'b')] = '';
   chordMap[btnCombo('l1', 'dright', 'y')] = '';
+  //other?
+  chordMap[btnCombo('l2', 'x')] =           '\n';
+  chordMap[btnCombo('l2', 'a')] =           ' ';
+  chordMap[btnCombo('l2', 'b')] =           '\b';
+  chordMap[btnCombo('l2', 'y')] =           'del'; //delete, but implement later
+  chordMap[btnCombo('l2', 'dup')] =         '';
+  chordMap[btnCombo('l2', 'dright')] =      '';
+  chordMap[btnCombo('l2', 'ddown')] =       '';
+  chordMap[btnCombo('l2', 'dleft')] =       '';
+  chordMap[btnCombo('l2', 'x', 'a')] =      '';
+  chordMap[btnCombo('l2', 'y', 'b')] =      '';
+  chordMap[btnCombo('l2', 'dleft', 'x')] =  '';
+  chordMap[btnCombo('l2', 'dleft', 'a')] =  '';
+  chordMap[btnCombo('l2', 'dleft', 'b')] =  '';
+  chordMap[btnCombo('l2', 'dleft', 'y')] =  '';
+  chordMap[btnCombo('l2', 'dup', 'x')] =    '';
+  chordMap[btnCombo('l2', 'dup', 'a')] =    '';
+  chordMap[btnCombo('l2', 'dup', 'b')] =    '';
+  chordMap[btnCombo('l2', 'dup', 'y')] =    '';
+  chordMap[btnCombo('l2', 'ddown', 'x')] =  '';
+  chordMap[btnCombo('l2', 'ddown', 'a')] =  '';
+  chordMap[btnCombo('l2', 'ddown', 'b')] =  '';
+  chordMap[btnCombo('l2', 'ddown', 'y')] =  '';
+  chordMap[btnCombo('l2', 'dright', 'x')] = '';
+  chordMap[btnCombo('l2', 'dright', 'a')] = '';
+  chordMap[btnCombo('l2', 'dright', 'b')] = '';
+  chordMap[btnCombo('l2', 'dright', 'y')] = '';
+
 
 
   var activeButtons = {
