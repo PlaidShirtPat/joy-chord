@@ -1,3 +1,12 @@
+.output{
+  display: block;
+  background-color: black;
+  color: green;
+  width: 400px;
+  height: 600px;
+  overflow: auto;
+}
+
 .controller{
   width: 400px;
   height: 200px;

@@ -278,7 +278,15 @@ $(document).ready(function(){
         buttons.push(button);
     }
 
-    console.log(chordMap[btnCombo(buttons)]);
+    writeText(chordMap[btnCombo(buttons)]);
+  }
+
+  var text = "";
+  var writeText = function(newText){
+    text += newText;
+    convertedText = text.replace(/\n/g, "<br/>");
+    convertedText = convertedText.replace(/ /g, "&nbsp;");
+    $('.output').html(convertedText);
   }
 
   var newChord = true;
