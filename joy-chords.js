@@ -191,12 +191,12 @@ $(document).ready(function(){
   chordMap[btnCombo('l2', 'a')] =           ' ';
   chordMap[btnCombo('l2', 'b')] =           '\b';
   chordMap[btnCombo('l2', 'y')] =           'del'; //delete, but implement later
+  chordMap[btnCombo('l2', 'x', 'a')] =      '\t'; //tab
+  chordMap[btnCombo('l2', 'y', 'b')] =      '';
   chordMap[btnCombo('l2', 'dup')] =         'pageup';
   chordMap[btnCombo('l2', 'dright')] =      'pagedown';
   chordMap[btnCombo('l2', 'ddown')] =       'home';
   chordMap[btnCombo('l2', 'dleft')] =       'end';
-  chordMap[btnCombo('l2', 'x', 'a')] =      '';
-  chordMap[btnCombo('l2', 'y', 'b')] =      '';
   chordMap[btnCombo('l2', 'dleft', 'x')] =  '';
   chordMap[btnCombo('l2', 'dleft', 'a')] =  '';
   chordMap[btnCombo('l2', 'dleft', 'b')] =  '';
@@ -285,11 +285,16 @@ $(document).ready(function(){
 
   var text = "";
   var writeText = function(newText){
-    if(newText == "\b")
-      text = text.replace(/.$/, "");
-    else
-      text += newText;
-    convertedText = text.replace(/\n/g, "<br/>").replace(/ /g, "&nbsp;");
+    switch(newText){
+      case "\b":
+        text = text.replace(/.$/, "");
+        break;
+      default: text += newText;
+    }
+    convertedText = text
+      .replace(/\n/g, "<br/>")
+      .replace(/\t/g, "&nbsp;&nbsp;")
+      .replace(/ /g, "&nbsp;");
     $('.output').html(convertedText);
   }
 
