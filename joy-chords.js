@@ -285,9 +285,11 @@ $(document).ready(function(){
 
   var text = "";
   var writeText = function(newText){
-    text += newText;
-    convertedText = text.replace(/\n/g, "<br/>");
-    convertedText = convertedText.replace(/ /g, "&nbsp;");
+    if(newText == "\b")
+      text = text.replace(/.$/, "");
+    else
+      text += newText;
+    convertedText = text.replace(/\n/g, "<br/>").replace(/ /g, "&nbsp;");
     $('.output').html(convertedText);
   }
 
