@@ -159,11 +159,11 @@ $(document).ready(function(){
   chordMap[btnCombo('r2', 'dright', 'b')] = '{';
   chordMap[btnCombo('r2', 'dright', 'y')] = '}';
   //More Symbols
-  chordMap[btnCombo('l1', 'x')] =           '\';
+  chordMap[btnCombo('l1', 'x')] =           '\\';
   chordMap[btnCombo('l1', 'a')] =           '|';
   chordMap[btnCombo('l1', 'b')] =           ';';
   chordMap[btnCombo('l1', 'y')] =           ':';
-  chordMap[btnCombo('l1', 'dup')] =         '\'';
+  chordMap[btnCombo('l1', 'dup')] =         "'";
   chordMap[btnCombo('l1', 'dright')] =      '"';
   chordMap[btnCombo('l1', 'ddown')] =       ',';
   chordMap[btnCombo('l1', 'dleft')] =       '.';
@@ -178,8 +178,6 @@ $(document).ready(function(){
   chordMap[btnCombo('l1', 'dup', 'a')] =    '';
   chordMap[btnCombo('l1', 'dup', 'b')] =    '';
   chordMap[btnCombo('l1', 'dup', 'y')] =    '';
-  chordMap[btnCombo('l1', 'x', 'a')] =      '';
-  chordMap[btnCombo('l1', 'y', 'b')] =      '';
   chordMap[btnCombo('l1', 'ddown', 'x')] =  '';
   chordMap[btnCombo('l1', 'ddown', 'a')] =  '';
   chordMap[btnCombo('l1', 'ddown', 'b')] =  '';
