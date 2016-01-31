@@ -109,9 +109,9 @@ $ : r2, dleft, y
 
 //other?
 
-\n : l2, x
+enter : l2, x
 space : l2, a
-\b : l2, b
+backspace : l2, b
 del : l2, y
 tab : l2, x, a
 pageup : l2, dup
