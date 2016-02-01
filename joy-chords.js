@@ -287,7 +287,7 @@ $(document).ready(function(){
   var writeText = function(newText){
     switch(newText){
       case "\b":
-        text = text.replace(/.$/, "");
+        text = text.substring(0, text.length-1);
         break;
       default: text += newText;
     }
